@@ -4,7 +4,7 @@ const name = document.getElementById("data");
 
       setInterval(function() {
         var date = new Date();
-        var period = date.getHours() >= 120 ? " PM" : " AM";
+        var period = date.getHours() >= 12 ? " PM" : " AM";
         var hours = date.getHours();
         var minutes = date.getMinutes();
         var seconds = date.getSeconds();
